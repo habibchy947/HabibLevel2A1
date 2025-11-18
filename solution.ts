@@ -45,7 +45,7 @@ const filterByRating = (items: { title: string; rating: number }[]): { title: st
         if (item.rating < 0 || item.rating > 5) {
             return false;
         }
-        // need to correct
+        
         return item.rating >= 4 && item.rating <= 5;
     })
     return filteredItems;
